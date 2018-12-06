@@ -1,0 +1,14 @@
+### 3 next planned tasks:
+colors choose in add new event form
+
+### rest:
+Show/hide past months.
+
+reminders in add new event form
+on click on day open add new event form with day filled in
+Editing existing events: when click on event - show details and enable editing event (add link do Google's calendar site)
+
+day number visible at the bottom of calendar
+fix view for mobile
+fix css to separate events from each other
+multilanguages

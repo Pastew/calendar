@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Year Calendar</title>
+    <meta charset="utf-8"/>
+
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!--Import materialize.css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <!--CSS for calendar table-->
+    <link rel="stylesheet" href="css/yearCalendar.css">
+</head>
+
+<body>
+<button id="authorize_button" style="display: none;">Authorize</button>
+<button id="signout_button" style="display: none;">Sign Out</button>
+
+<pre id="content" style="white-space: pre-wrap;"></pre>
+
+<table id="calendar"></table>
+
+<div id="add_new_event_form" class="z-depth-5 scale-transition scale-out">
+    <div class="row">
+        <div class="col s12">
+            <div class="row">
+                <!--TODO: Tu jebnij kolory-->
+                <div class="col s1 offset-s10">
+                    <a onclick="closeAddNewEventForm()" class="waves-effect waves-teal btn-flat"><i class="material-icons right">close</i></a>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="input-field col s12">
+                    <input id="event_title" type="text" class="validate">
+                    <label for="event_title">Tytul wydarzenia</label>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="input-field col s12">
+                    <textarea id="event_description" class="materialize-textarea"></textarea>
+                    <label for="event_description">Wiecej informacji...</label>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="input-field col s8">
+                    <input id="date_start" type="text" class="datepicker">
+                    <label for="date_start">Start</label>
+                </div>
+                <div class="input-field col s4">
+                    <input id="time_start" type="text" class="timepicker">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="input-field col s8">
+                    <input id="date_end" type="text" class="datepicker">
+                    <label for="date_end">Koniec</label>
+                </div>
+                <div class="input-field col s4">
+                    <input id="time_end" type="text" class="timepicker">
+                </div>
+            </div>
+
+            <button id="add_new_event_button" class="btn waves-effect waves-light" onclick="addNewEvent()">Zapisz</button>
+        </div>
+
+    </div>
+</div>
+
+<div class="fixed-action-btn">
+    <a class="btn-floating btn-large red">
+        <i class="large material-icons">add</i>
+    </a>
+</div>
+
+<script src="js/yearCalendar.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+<script async defer src="https://apis.google.com/js/api.js" onload="this.onload=function(){};handleClientLoad()"
+        onreadystatechange="if (this.readyState === 'complete') this.onload()"></script>
+
+</body>
+</html>

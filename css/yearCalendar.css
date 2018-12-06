@@ -1,0 +1,104 @@
+table {
+    width: 100%;
+    table-layout: fixed;
+}
+
+table {
+}
+
+table, th, td {
+}
+
+td {
+    height: 70px;
+    padding: 2px;
+}
+
+.day {
+    height: 100%;
+    font-size:small;
+}
+
+.currentDay {
+    border: 2px solid black;
+    border-radius: 4px;
+}
+
+.monthName {
+    font-weight: bold;
+    font-size:larger;
+}
+
+.dayName {
+    font-weight: lighter;
+}
+
+.eventList {
+}
+
+.event {
+    white-space:nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.weekend {
+    background-color: #e9e9e9;
+}
+
+
+/* Window for creating new events */
+#add_new_event_form {
+    position:absolute;
+    z-index:100;
+    left:20%;
+    top:20%;
+    background-color: white;
+    /*visibility: hidden;*/
+}
+
+/* Event background colors */
+
+.color-1 {
+    background-color: #a4bdfc
+}
+
+.color-2 {
+    background-color: #7ae7bf
+}
+
+.color-3 {
+    background-color: #dbadff
+}
+
+.color-4 {
+    background-color: #ff887c
+}
+
+.color-5 {
+    background-color: #fbd75b
+}
+
+.color-6 {
+    background-color: #ffb878
+}
+
+.color-7 {
+    background-color: #46d6db
+}
+
+.color-8 {
+    background-color: #e1e1e1
+}
+
+.color-9 {
+    background-color: #5484ed
+}
+
+.color-10 {
+    background-color: #51b749
+}
+
+.color-11 {
+    background-color: #dc2127
+}
